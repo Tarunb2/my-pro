@@ -563,6 +563,28 @@ h3.my-profession{
     color: var(--text-black-700);
     line-height: 25px;
 }
+.service-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.icon i {
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
 /* Portfolio */
 .portfolio .container{
     margin: 0;
@@ -588,6 +610,36 @@ h3.my-profession{
     overflow: hidden;
     cursor: pointer;
 }
+.portfolio-item {
+    perspective: 1000px; /* Enables 3D effect */
+}
+
+.portfolio-item-inner {
+    position: relative;
+    transition: transform 0.6s, background 0.6s, box-shadow 0.6s;
+    transform-style: preserve-3d;
+    background: linear-gradient(45deg, #ddd6d994, #afa3a59d);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover .portfolio-item-inner {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+    background: linear-gradient(45deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-img img {
+    transition: transform 0.6s ease-in-out, filter 0.6s;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover .portfolio-img img {
+    transform: scale(1.1) rotateY(5deg);
+    filter: brightness(1.2);
+}
+
 /* contact */
 .portfolio .portfolio-item .portfolio-item-inner .portfolio-img img{
     width: 100%;
@@ -723,4 +775,3 @@ h3.my-profession{
         max-width: 100%;
     }
 }
-
