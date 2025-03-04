@@ -335,6 +335,21 @@ h3.my-profession{
     border-radius: 5px;
     height: 400px;
 }
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.home-img img {
+    animation: upDown 2s infinite ease-in-out;
+}
+
 /* About */
 .about .about-content{
     flex: 0 0 100%;
