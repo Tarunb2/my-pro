@@ -602,8 +602,7 @@ h3.my-profession{
 
 /* Portfolio */
 .portfolio .container{
-    margin: 0;
-    padding: 0;
+    padding-bottom: 40px;
 }
 .portfolio .portfolio-heading{
     flex: 0 0 100%;
@@ -633,7 +632,7 @@ h3.my-profession{
     position: relative;
     transition: transform 0.6s, background 0.6s, box-shadow 0.6s;
     transform-style: preserve-3d;
-    background: linear-gradient(45deg, #ddd6d994, #afa3a59d);
+    background: linear-gradient(45deg, #ddd6d93d, #afa3a541);
     padding: 10px;
     border-radius: 10px;
 }
@@ -653,6 +652,31 @@ h3.my-profession{
 .portfolio-item:hover .portfolio-img img {
     transform: scale(1.1) rotateY(5deg);
     filter: brightness(1.2);
+}
+.portfolio-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-black-900);
+}
+
+.portfolio-links {
+    margin-top: 5px;
+}
+
+.portfolio-links a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: var(--text-black-700);
+    transition: color 0.3s;
+}
+
+.portfolio-links a:hover {
+    color: var(--skin-color);
 }
 
 /* contact */
