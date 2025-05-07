@@ -960,6 +960,6 @@ h3.my-profession {
 }
 @media (max-width: 768px) {
     .robot-3d {
-        right: -80%;
+        display: none;
     }
 }
